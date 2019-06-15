@@ -10,7 +10,7 @@ App::bind('database', new QueryBuilder(
 
   function view($name)
   {
-    return 'views/{$name}.view.php';
+    return require 'views/{$name}.view.php';
   }
 
 ?>
